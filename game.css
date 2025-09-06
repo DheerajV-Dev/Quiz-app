@@ -1,0 +1,73 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86,165,235,0.25); /* fixed color syntax */
+    background-color:white;
+}
+
+.choice-prefix {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 0.1rem solid rgba(86,165,235,0.25); /* fixed color syntax */
+    margin-right: 1rem;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+.choice-text {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 0.1rem solid rgba(86,165,235,0.25); /* fixed color syntax */
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    background-color: cyan; /* fixed color syntax */
+}
+.choice-container:hover .choice-prefix {
+    background-color: #4CAF50; /* fixed color syntax */
+    color: white;
+}
+
+#question {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+   
+}
+
+.correct {
+    background-color: #4CAF50 !important;
+    color: #fff !important;
+}
+
+.incorrect {
+    background-color: #f44336 !important;
+    color: #fff !important;
+}
+
+/* hud styling */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hud-prefix {
+    font-size: 2rem;
+    text-align:center;
+}    
+.hud-main-text{
+    text-align: center;
+}
